@@ -24,12 +24,13 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            Column(modifier = Modifier
+            Row(modifier = Modifier
                 .fillMaxSize()
                 .background(Color.Green),
-                horizontalAlignment = Alignment.CenterHorizontally,
-                verticalArrangement = Arrangement.Center
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.SpaceAround
             ) {
+                Text("Hello")
                 Text("Hello")
                 Text("Hello")
             }
